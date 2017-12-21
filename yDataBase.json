@@ -1,0 +1,221 @@
+{
+  "version": "1.2",
+  "name": "custom.jmx.CreatedPlugin_yDataBase1513814241731",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "yDataBase"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections Active",
+        "series": [
+          {
+            "key": "metric_Active_12323232323234242",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections Active"
+          }
+        ]
+      },
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections MaxAllowedPhysicalOpen",
+        "series": [
+          {
+            "key": "metric_MaxAllowedPhysicalOpen_1513814053969",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections MaxAllowedPhysicalOpen"
+          }
+        ]
+      },
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections MaxInUse",
+        "series": [
+          {
+            "key": "metric_MaxInUse_1513814069811",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections MaxInUse"
+          }
+        ]
+      },
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections MaxPhysicalOpen",
+        "series": [
+          {
+            "key": "metric_MaxPhysicalOpen_1513814098153",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections MaxPhysicalOpen"
+          }
+        ]
+      },
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections NumInUse",
+        "series": [
+          {
+            "key": "metric_NumInUse_1513814115467",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections NumInUse"
+          }
+        ]
+      },
+      {
+        "group": "yDataBase metrics",
+        "title": "[y]DB Connections NumPhysicalOpen",
+        "series": [
+          {
+            "key": "metric_NumPhysicalOpen_1513814128324",
+            "aggregation": "avg",
+            "displayname": "[y]DB Connections NumPhysicalOpen"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_MaxAllowedPhysicalOpen_1513814053969",
+        "unit": "Count",
+        "displayname": "[y]DB Connections MaxAllowedPhysicalOpen",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "MaxAllowedPhysicalOpen",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_MaxInUse_1513814069811",
+        "unit": "Count",
+        "displayname": "[y]DB Connections MaxInUse",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "MaxInUse",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_Active_12323232323234242",
+        "unit": "Count",
+        "displayname": "[y]DB Connections Active",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "Active",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_MaxPhysicalOpen_1513814098153",
+        "unit": "Count",
+        "displayname": "[y]DB Connections MaxPhysicalOpen",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "MaxPhysicalOpen",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_NumInUse_1513814115467",
+        "unit": "Count",
+        "displayname": "[y]DB Connections NumInUse",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "NumInUse",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_NumPhysicalOpen_1513814128324",
+        "unit": "Count",
+        "displayname": "[y]DB Connections NumPhysicalOpen",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "datasource": "DataSources",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "NumPhysicalOpen",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    }
+  ]
+}

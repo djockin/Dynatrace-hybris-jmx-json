@@ -1,0 +1,221 @@
+{
+  "version": "1.3",
+  "name": "custom.jmx.CreatedPlugin_yQueryRegion13",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "yQueryRegionCache"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion CacheFillRatio",
+        "series": [
+          {
+            "key": "metric_CacheFillRatio_1513792158264",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion CacheFillRatio"
+          }
+        ]
+      },
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion CurrentCacheSize",
+        "series": [
+          {
+            "key": "metric_CurrentCacheSize_1513792184118",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion CurrentCacheSize"
+          }
+        ]
+      },
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion EvictionCount",
+        "series": [
+          {
+            "key": "metric_EvictionCount_1513792210565",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion EvictionCount"
+          }
+        ]
+      },
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion HitCount",
+        "series": [
+          {
+            "key": "metric_HitCount_1513792228125",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion HitCount"
+          }
+        ]
+      },
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion HitRatio",
+        "series": [
+          {
+            "key": "metric_HitRatio_1513792279709",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion HitRatio"
+          }
+        ]
+      },
+      {
+        "group": "yQueryRegionCache metrics",
+        "title": "[y]QueryRegion MaximumCacheSize",
+        "series": [
+          {
+            "key": "metric_MaximumCacheSize_1513792316364",
+            "aggregation": "avg",
+            "displayname": "[y]QueryRegion MaximumCacheSize"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_CacheFillRatio_1513792158264",
+        "unit": "Percent",
+        "displayname": "[y]QueryRegion CacheFillRatio",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "CacheFillRatio",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_CurrentCacheSize_1513792184118",
+        "unit": "Count",
+        "displayname": "[y]QueryRegion CurrentCacheSize",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "CurrentCacheSize",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_EvictionCount_1513792210565",
+        "unit": "Count",
+        "displayname": "[y]QueryRegion EvictionCount",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "EvictionCount",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_HitCount_1513792228125",
+        "unit": "Count",
+        "displayname": "[y]QueryRegion HitCount",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "HitCount",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_HitRatio_1513792279709",
+        "unit": "Percent",
+        "displayname": "[y]QueryRegion HitRatio",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "HitRatio",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_MaximumCacheSize_1513792316364",
+        "unit": "Count",
+        "displayname": "[y]QueryRegion MaximumCacheSize",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "tenantscope": "Master Tenant",
+          "region": "Query Region Cache"
+        },
+        "attribute": "MaximumCacheSize",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    }
+  ]
+}
