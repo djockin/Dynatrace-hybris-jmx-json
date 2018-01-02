@@ -1,4 +1,4 @@
-# yDataBase JMX Metrics
+# yDatabase JMX Metrics
 The following table represents the the metrics in the current json file. Please remember to update this readme when modifying the json file.
 
 
