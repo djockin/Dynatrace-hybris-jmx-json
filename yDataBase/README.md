@@ -10,3 +10,4 @@ The following table represents the the metrics in the current json file. Please 
 |[y]DB Connections MaxInUse|MaxInUse|avg|
 |[y]DB Connections MaxAllowedPhysicalOpen|MaxAllowedPhysicalOpen|avg|
 |[y]DB Connections Active|Active|avg|
+
