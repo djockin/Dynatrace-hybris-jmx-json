@@ -9,6 +9,6 @@ The following table represents the the metrics in the current json file. Please 
 |Manager sessionAverageAliveTime (ms)|sessionAverageAliveTime|avg|
 |Manager rejectedSessions|rejectedSessions|sum|
 |Manager processingTime (ms) sum|processingTime|sum|
-|Manager expiredSessions|expiredSessions|avg|
+|Manager expiredSessions|expiredSessions|sum|
 |Manager duplicates|duplicates|sum|
 |Manager activeSessions|activeSessions|sum|
