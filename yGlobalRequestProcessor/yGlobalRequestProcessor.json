@@ -1,0 +1,215 @@
+{
+  "version": "1.1514919046",
+  "name": "custom.jmx.CreatedPlugin_yGlobalRequestProcessor1514919046058",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "yGlobalRequestProcessor"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor bytesReceived",
+        "series": [
+          {
+            "key": "metric_bytesReceived_1514918884422",
+            "aggregation": "sum",
+            "displayname": "GlobalRequestProcessor bytesReceived"
+          }
+        ]
+      },
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor bytesSent",
+        "series": [
+          {
+            "key": "metric_bytesSent_1514918915483",
+            "aggregation": "sum",
+            "displayname": "GlobalRequestProcessor bytesSent"
+          }
+        ]
+      },
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor errorCount",
+        "series": [
+          {
+            "key": "metric_errorCount_1514918940750",
+            "aggregation": "sum",
+            "displayname": "GlobalRequestProcessor errorCount"
+          }
+        ]
+      },
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor maxTime (ms)",
+        "series": [
+          {
+            "key": "metric_maxTime_1514918979487",
+            "aggregation": "max",
+            "displayname": "GlobalRequestProcessor maxTime (ms)"
+          }
+        ]
+      },
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor processingTime (ms)",
+        "series": [
+          {
+            "key": "metric_processingTime_1514919008921",
+            "aggregation": "sum",
+            "displayname": "GlobalRequestProcessor processingTime (ms)"
+          }
+        ]
+      },
+      {
+        "group": "yGlobalRequestProcessor metrics",
+        "title": "GlobalRequestProcessor requestCount",
+        "series": [
+          {
+            "key": "metric_requestCount_1514919035497",
+            "aggregation": "sum",
+            "displayname": "GlobalRequestProcessor requestCount"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_bytesReceived_1514918884422",
+        "unit": "Byte",
+        "displayname": "GlobalRequestProcessor bytesReceived",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "bytesReceived",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "sum"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_bytesSent_1514918915483",
+        "unit": "Byte",
+        "displayname": "GlobalRequestProcessor bytesSent",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "bytesSent",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "sum"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_errorCount_1514918940750",
+        "unit": "Count",
+        "displayname": "GlobalRequestProcessor errorCount",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "errorCount",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "sum"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_maxTime_1514918979487",
+        "unit": "MilliSecond",
+        "displayname": "GlobalRequestProcessor maxTime (ms)",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "maxTime",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "max"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_processingTime_1514919008921",
+        "unit": "MilliSecond",
+        "displayname": "GlobalRequestProcessor processingTime (ms)",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "processingTime",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "sum"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_requestCount_1514919035497",
+        "unit": "Count",
+        "displayname": "GlobalRequestProcessor requestCount",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "GlobalRequestProcessor"
+        },
+        "attribute": "requestCount",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "sum"
+      }
+    }
+  ]
+}

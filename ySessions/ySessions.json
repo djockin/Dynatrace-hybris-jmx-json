@@ -1,0 +1,287 @@
+{
+  "version": "1.1514915736",
+  "name": "custom.jmx.CreatedPlugin_ySessions1514915736676",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "ySessions"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "ySessions metrics",
+        "title": "[y]AdminCockpit activeSession",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915558131",
+            "aggregation": "avg",
+            "displayname": "[y]AdminCockpit activeSession"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]HMC activeSession",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915592690",
+            "aggregation": "avg",
+            "displayname": "[y]HMC activeSession"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]AcceleratorServices activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915628634",
+            "aggregation": "avg",
+            "displayname": "[y]AcceleratorServices activeSessions"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]BackOffice activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915632389",
+            "aggregation": "avg",
+            "displayname": "[y]BackOffice activeSessions"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]Medias activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915643147",
+            "aggregation": "avg",
+            "displayname": "[y]Medias activeSessions"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]ReportCockpit activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915672042",
+            "aggregation": "avg",
+            "displayname": "[y]ReportCockpit activeSessions"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]Storefront activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915699814",
+            "aggregation": "avg",
+            "displayname": "[y]Storefront activeSessions"
+          }
+        ]
+      },
+      {
+        "group": "ySessions metrics",
+        "title": "[y]VirtualJDBC activeSessions",
+        "series": [
+          {
+            "key": "metric_activeSessions_1514915720377",
+            "aggregation": "avg",
+            "displayname": "[y]VirtualJDBC activeSessions"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915558131",
+        "unit": "Count",
+        "displayname": "[y]AdminCockpit activeSession",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/admincockpit"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915592690",
+        "unit": "Count",
+        "displayname": "[y]HMC activeSession",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/hmc"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915628634",
+        "unit": "Count",
+        "displayname": "[y]AcceleratorServices activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/acceleratorservices"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915632389",
+        "unit": "Count",
+        "displayname": "[y]BackOffice activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/backoffice"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915643147",
+        "unit": "Count",
+        "displayname": "[y]Medias activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/medias"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915672042",
+        "unit": "Count",
+        "displayname": "[y]ReportCockpit activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/reportcockpit"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915699814",
+        "unit": "Count",
+        "displayname": "[y]Storefront activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/yacceleratorstorefront"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_activeSessions_1514915720377",
+        "unit": "Count",
+        "displayname": "[y]VirtualJDBC activeSessions",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "Catalina",
+        "keyProperties": {
+          "type": "Manager",
+          "context": "/virtualjdbc"
+        },
+        "attribute": "activeSessions",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    }
+  ]
+}

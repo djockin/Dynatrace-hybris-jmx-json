@@ -1,0 +1,163 @@
+{
+  "version": "1.7",
+  "name": "custom.jmx.CreatedPlugin_yTaskEngine1514917523342",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "yTaskEngine"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "yTaskEngine metrics",
+        "title": "[y]TaskEngine queueSize",
+        "series": [
+          {
+            "key": "metric_Count_1514917714452",
+            "aggregation": "avg",
+            "displayname": "[y]TaskEngine queueSize"
+          }
+        ]
+      },
+      {
+        "group": "yTaskEngine metrics",
+        "title": "[y]TaskEngine executionTime 50thPercentile",
+        "series": [
+          {
+            "key": "metric_50thPercentile_1514918071399",
+            "aggregation": "avg",
+            "displayname": "[y]TaskEngine executionTime 50thPercentile"
+          }
+        ]
+      },
+      {
+        "group": "yTaskEngine metrics",
+        "title": "[y]TaskEngine executionTime 75thPercentile",
+        "series": [
+          {
+            "key": "metric_75thPercentile_1514918114750",
+            "aggregation": "avg",
+            "displayname": "[y]TaskEngine executionTime 75thPercentile"
+          }
+        ]
+      },
+      {
+        "group": "yTaskEngine metrics",
+        "title": "[y]TaskEngine executionTime 99thPercentile",
+        "series": [
+          {
+            "key": "metric_99thPercentile_1514918175154",
+            "aggregation": "avg",
+            "displayname": "[y]TaskEngine executionTime 99thPercentile"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_Count_1514917714452",
+        "unit": "Count",
+        "displayname": "[y]TaskEngine queueSize",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris-metrics",
+        "keyProperties": {
+          "name": "queue.size",
+          "tenant": "master",
+          "extension": "processing",
+          "module": "taskEngine"
+        },
+        "attribute": "Count",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_50thPercentile_1514918071399",
+        "unit": "MilliSecond",
+        "displayname": "[y]TaskEngine executionTime 50thPercentile",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris-metrics",
+        "keyProperties": {
+          "tenant": "master",
+          "extension": "processing",
+          "module": "taskEngine",
+          "name": "execution.time"
+        },
+        "attribute": "50thPercentile",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_75thPercentile_1514918114750",
+        "unit": "MilliSecond",
+        "displayname": "[y]TaskEngine executionTime 75thPercentile",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris-metrics",
+        "keyProperties": {
+          "tenant": "master",
+          "extension": "processing",
+          "module": "taskEngine",
+          "name": "execution.time"
+        },
+        "attribute": "75thPercentile",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_99thPercentile_1514918175154",
+        "unit": "MilliSecond",
+        "displayname": "[y]TaskEngine executionTime 99thPercentile",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris-metrics",
+        "keyProperties": {
+          "tenant": "master",
+          "extension": "processing",
+          "module": "taskEngine",
+          "name": "execution.time"
+        },
+        "attribute": "99thPercentile",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    }
+  ]
+}
