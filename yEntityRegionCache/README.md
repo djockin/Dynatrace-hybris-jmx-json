@@ -1,19 +1,12 @@
-# Dynatrace-hybris-jmx-json
-A JSON repostory for custom JMX metrics for Hybris running on Dynatrace
+# yEntityRegionCache JMX Metrics
+The following table represents the the metrics in the current json file. Please remember to update this readme when modifying the json file.
 
-## Requirements
-* Dynatrace Environment with OneAgent Installed on Hybris hosts
-* Dynatrace Environment permissions to upload custom plugins
 
-## Installation on your Dynatrace Tenant
-* From the 'Settings' -> 'Monitoring' -> 'Monitored Technologies' section, select 'Custom plugins' tab
-* Click on the button 'Upload Plugin' and select the hybris.json files you wish to use.
-
-## Limitations
-* JMX monitoring is highly dynamic. If a particular metric doesn’t exist in your JVM, it's not an error—the metric simply isn't available.
-
-## Important links:
-
-https://www.dynatrace.com/support/help/monitoring-plugins/application-plugins/how-do-i-monitor-jmx-metrics-in-my-java-applications/ 
-
- https://dynatrace.github.io/plugin-sdk/api/plugin_json_apidoc.html
+|Display name	|Metric source	|Aggregation|
+|-------------|---------------|-----------|
+|[y]EntityRegion MaximumCacheSize|MaximumCacheSize|avg|
+|[y]EntityRegion HitRatio|HitRatio|avg|
+|[y]EntityRegion HitCount|HitCount|avg|
+|[y]EntityRegion EvictionCount|EvictionCount|avg|
+|[y]EntityRegion CurrentCacheSize|CurrentCacheSize|avg|
+|[y]EntityRegion CacheFillRatio|CacheFillRatio|avg|
