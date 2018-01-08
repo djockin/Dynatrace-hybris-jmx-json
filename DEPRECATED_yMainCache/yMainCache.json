@@ -1,0 +1,122 @@
+{
+  "version": "1.1513791810",
+  "name": "custom.jmx.CreatedPlugin_yMainCache1513791810466",
+  "type": "JMX",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "yMainCache"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "yMainCache metrics",
+        "title": "[y]MainCache CurrentCacheSize",
+        "series": [
+          {
+            "key": "metric_CurrentCacheSize_1513791721277",
+            "aggregation": "avg",
+            "displayname": "[y]MainCache CurrentCacheSize"
+          }
+        ]
+      },
+      {
+        "group": "yMainCache metrics",
+        "title": "[y]MainCache EntitiesMissCountInPercent",
+        "series": [
+          {
+            "key": "metric_EntitiesMissCountInPercent_1513791778021",
+            "aggregation": "avg",
+            "displayname": "[y]MainCache EntitiesMissCountInPercent"
+          }
+        ]
+      },
+      {
+        "group": "yMainCache metrics",
+        "title": "[y]MainCache MaxReachedCacheSize",
+        "series": [
+          {
+            "key": "metric_MaxReachedCacheSize_1513791803159",
+            "aggregation": "avg",
+            "displayname": "[y]MainCache MaxReachedCacheSize"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_CurrentCacheSize_1513791721277",
+        "unit": "Count",
+        "displayname": "[y]MainCache CurrentCacheSize",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "main": "Cache Main",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "CurrentCacheSize",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_EntitiesMissCountInPercent_1513791778021",
+        "unit": "Percent",
+        "displayname": "[y]MainCache EntitiesMissCountInPercent",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "main": "Cache Main",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "EntitiesMissCountInPercent",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "metric_MaxReachedCacheSize_1513791803159",
+        "unit": "Count",
+        "displayname": "[y]MainCache MaxReachedCacheSize",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "hybris",
+        "keyProperties": {
+          "main": "Cache Main",
+          "tenantscope": "Master Tenant"
+        },
+        "attribute": "MaxReachedCacheSize",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "avg"
+      }
+    }
+  ]
+}
