@@ -1,5 +1,5 @@
 {
-  "version": "1.1514915736",
+  "version": "1.16",
   "name": "custom.jmx.CreatedPlugin_ySessions1514915736676",
   "type": "JMX",
   "processTypes": [
@@ -252,7 +252,7 @@
         "domain": "Catalina",
         "keyProperties": {
           "type": "Manager",
-          "context": "/yacceleratorstorefront"
+          "context": "/"
         },
         "attribute": "activeSessions",
         "allowAdditionalKeys": true,
